@@ -1,0 +1,48 @@
+<!--Create a table with merged header cells-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Merged Header Cells</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Stud Details</th>
+            <th rowspan="2">Age</th>
+        </tr>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>101</td>
+            <td>Om</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Sanket</td>
+            <td>23</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
