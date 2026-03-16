@@ -1,1 +1,1 @@
-//Q5. Write a java program to remove duplicated values from arrays.
+//Q5. Write a JavaScript program to remove duplicated values from arrays.
