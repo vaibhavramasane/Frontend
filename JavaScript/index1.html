@@ -1,0 +1,24 @@
+//Example: we want to create a web page with one button and heading tag and when a user clicks on button then heading access on button click.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function show(){
+            let headingTag = document.getElementById("H");
+            let str = headingTag.innerHTML;
+            alert(str);   
+        }
+
+
+    </script>
+</head>
+<body>
+    <h1 id="H">Good Morning</h1>
+    <input type="button" name="s" value="click me"
+    style="width: 40px;height: 40px;" onclick="show()">
+    
+</body>
+</html>
