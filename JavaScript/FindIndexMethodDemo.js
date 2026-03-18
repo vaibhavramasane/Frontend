@@ -5,5 +5,6 @@ let res = a.findIndex(myfunction);
 console.log(res); // return index
 
 function myfunction(value,index,array){
+	
 	return value>20
 }
