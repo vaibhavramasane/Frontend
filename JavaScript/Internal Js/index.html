@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial;
+  text-align: center;
+  margin-top: 50px;
+}
+button {
+  padding: 10px 20px;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<p id="text">Hello Vaibhav</p>
+<button onclick="changeText()">Click Me</button>
+
+<script>
+function changeText(){
+  document.getElementById("text").innerText = "Text Changed!";
+}
+</script>
+
+</body>
+</html>
