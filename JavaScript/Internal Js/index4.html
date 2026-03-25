@@ -1,0 +1,40 @@
+<!-- 4. Input Value Display
+Description: Show input text in a paragraph.
+Practice: value -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            width: 100%
+            
+
+        }
+        button{
+            background: red;
+            padding: 4px ;
+            color: black;
+            border: 1px solid #000;
+            border-radius: 0%;
+
+        }
+    </style>
+    <script type="text/javascript">
+        function show(){
+            document.getElementById("output").innerText =
+                document.getElementById("input").value;
+        }
+    </script>
+</head>
+<body>
+    <input id="input">
+    <button onclick="show()">Show</button>
+    <p id="output"></p>
+    
+</body>
+</html>
