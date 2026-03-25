@@ -1,0 +1,27 @@
+<!-- 3. Show/Hide Element
+Description: Toggle visibility of a div.
+Practice: style.display -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function toggle(){
+            let el = document.getElementById("box");
+            el.style.display = (el.style.display == "none")?"block":"none";
+
+        }
+
+    </script>
+
+</head>
+<body>
+    <div id="box">Hello</div>
+    <button onclick="toggle()">Toggle</button>
+
+    
+</body>
+</html>
