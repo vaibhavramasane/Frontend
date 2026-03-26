@@ -1,0 +1,61 @@
+<!-- 11. To-Do List App
+ Description: Add & remove tasks.
+Practice: createElement, events
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial;
+  text-align: center;
+}
+.container {
+  width: 300px;
+  margin: auto;
+}
+input {
+  padding: 10px;
+  width: 70%;
+}
+button {
+  padding: 10px;
+  background: blue;
+  color: white;
+  border: none;
+}
+li {
+  background: lightgray;
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2>To-Do List</h2>
+  <input id="task" placeholder="Enter task">
+  <button onclick="addTask()">Add</button>
+  <ul id="tasks"></ul>
+</div>
+
+<script>
+function addTask(){
+  let li = document.createElement("li");
+  li.innerText = document.getElementById("task").value;
+
+  li.onclick = function(){
+    this.remove();
+  }
+
+  document.getElementById("tasks").appendChild(li);
+}
+</script>
+
+</body>
+
+</html>
