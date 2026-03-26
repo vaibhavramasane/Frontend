@@ -1,0 +1,31 @@
+<!-- 8. Remove Element 
+Description: Remove a paragraph on button click -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btw" onclick="Removepara()">Remove</button>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+      repellendus numquam fugiat reprehenderit odit doloribus soluta quisquam
+      incidunt consectetur, amet dolorem cum dignissimos quas vero deserunt illo
+      nemo fuga, perferendis quidem porro ullam. Non ipsam qui, aperiam nostrum
+      architecto cumque quas iure possimus ratione amet itaque ut ex quia
+      quaerat.
+    </p>
+    <script type="text/javascript">
+        function Removepara(){
+            let para = document.getElementById("para");
+            para.remove();
+
+
+        }
+
+    </script>
+  </body>
+</html>
