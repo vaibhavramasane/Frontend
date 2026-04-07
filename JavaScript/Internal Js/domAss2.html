@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving Licence Name</title>
+     <script>
+        function validLicensce(str){
+            let span = document.getElementById("s");
+
+            if(str.length == 0){
+                span.innerHTML = "Name should not be empty";
+                span.style.color = "red";
+            } 
+            else {
+                let calpha = 0;
+
+                for(let i = 0; i < str.length; i++){
+                    if((str[i] >= 'A' && str[i] <= 'Z') || 
+                       (str[i] >= 'a' && str[i] <= 'z')){
+                        calpha++;
+                    }
+                }
+
+                if(calpha == str.length){
+                    span.innerHTML = "Valid Name";
+                    span.style.color = "green";
+                } else {
+                    span.innerHTML = "Only alphabets allowed";
+                    span.style.color = "red";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type='text' name='name' value='' id='n' 
+style="width:400px;height:40px;" onkeyup="validLicensce(this.value)"/>
+&nbsp;&nbsp;<span id="s"></span>
+    
+</body>
+</html>
