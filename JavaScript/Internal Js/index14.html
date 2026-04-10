@@ -1,0 +1,53 @@
+<!-- Q2. Change Background Color 
+Problem: Change the background color of all paragraphs (<p>) to yellow means create 5 <p> tag on html 
+and change background color of all after button click  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Ipsam, cum facere? Eaque magni deserunt, rem aliquam 
+         necessitatibus optio quia repellat!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Ipsam, cum facere? Eaque magni deserunt, rem aliquam 
+         necessitatibus optio quia repellat!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Ipsam, cum facere? Eaque magni deserunt, rem aliquam 
+         necessitatibus optio quia repellat!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Ipsam, cum facere? Eaque magni deserunt, rem aliquam 
+         necessitatibus optio quia repellat!</p>
+        
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Ipsam, cum facere? Eaque magni deserunt, rem aliquam 
+         necessitatibus optio quia repellat!</p>
+
+    
+
+    <button onclick="changecolor()">Click me</button>
+    <script>
+        function changecolor(){
+
+          let p = document.getElementsByTagName("p");
+          for(let i=0; i<p.length; i++){
+               p[i].style.backgroundColor ="yellow";
+          }
+
+        }
+    </script>
+
+
+
+    
+</body>
+</html>

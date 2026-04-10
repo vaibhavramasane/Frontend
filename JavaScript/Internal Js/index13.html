@@ -1,0 +1,24 @@
+ <!-- Q1. Change Text Content 
+Problem: Write a program to change the text of an element with id "title" to "Hello World!" after button 
+click  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1 id ="title">Original Text</h1>
+
+<button onclick="changeText()">Click me</button>
+<script>
+    function changeText(){
+        document.getElementById("title").innerText = "Hello World";
+
+    }
+</script>
+<body>
+    
+</body>
+</html>
